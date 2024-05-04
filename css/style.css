@@ -1,0 +1,126 @@
+body {
+  font-size: 62.5%;
+}
+
+:root {
+  --color-primary: #234894;
+  --color-primary-light: #afcedd;
+  --color-secondary: #696969;
+  -colo-secondary-dark: #1e1e1e;
+  --color-body: #fff;
+  --color-btn: #219f95;
+}
+
+/* card */
+.card {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+/* cards-container */
+.cards__container {
+  display: grid;
+  gap: 0.5rem;
+}
+
+/* title */
+.card__header-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  transition: bold;
+  padding: 1rem 2rem;
+}
+
+/* header-documention  */
+.card__header-documention {
+  padding-top: 4.5rem;
+}
+/*documention__number  */
+.documention__number {
+  border: 1px solid var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  background-color: var(--color-primary-light);
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+/* documention__text */
+.documention__text {
+  font-size: 1.3rem;
+  background-color: #fff;
+  margin-right: 12px;
+  color: var(--color-primary);
+}
+
+/* card__header-date */
+.card__header-date {
+  padding-right: 85px;
+  margin-left: 15px;
+  font-size: 15px;
+}
+
+/* card-content */
+
+.card-content {
+  padding-top: 1.3rem;
+  display: grid;
+}
+/* card__content-member */
+.card__content-member {
+  display: grid;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-top: 1.3rem;
+}
+/* member__request */
+
+.member__request {
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+/* member-data */
+.member-data {
+  font-size: 1rem;
+  padding: 2rem 0.2rem;
+  display: flex;
+}
+.member-data h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding-right: 10px;
+  padding-left: 4.3rem;
+}
+
+.member-data img {
+  width: 75px;
+  height: 65px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+/* btn */
+.btn {
+  width: 10rem;
+  height: 5rem;
+  border-radius: 20px;
+  background-color: var(--color-btn);
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 12px;
+  border: none;
+}
+
+/* Tablet View */
+@media screen and (min-width: 768px) {
+  .cards__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Laptop View */
+@media screen and (min-width: 1055px) {
+  .cards__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/* Mobile View */
